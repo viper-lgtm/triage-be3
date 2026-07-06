@@ -17,4 +17,10 @@ public class ExchangeRateServiceImpl implements ExchangeRateService {
     public List<ExchangeRateDto> getExchangeRates() {
         return List.of(client.getExchangeRateFromApi());
     }
+
+    @Override
+    public void processExchangeRate(ExchangeRateDto rate) {
+        // Simple processing for now: log or extend with persistence/business logic
+        System.out.println("Processing rate in service: " + rate.shortName());
+    }
 }
