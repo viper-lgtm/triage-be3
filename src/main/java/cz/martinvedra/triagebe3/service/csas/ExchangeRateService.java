@@ -7,4 +7,5 @@ import java.util.List;
 public interface ExchangeRateService {
 
     List<ExchangeRateDto> getExchangeRates();
+    void processExchangeRate(ExchangeRateDto rate);
 }
