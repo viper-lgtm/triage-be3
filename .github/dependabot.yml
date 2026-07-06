@@ -1,0 +1,10 @@
+## Dependabot configuration: update Maven dependencies for triage-be3 weekly
+version: 2
+updates:
+  - package-ecosystem: "maven"
+    directory: "/triage-be3"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    # Optional: uncomment or adjust to control versioning strategy
+    # versioning-strategy: "widen"
